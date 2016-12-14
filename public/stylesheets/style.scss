@@ -8,6 +8,7 @@ a {
 }
 
 .grid {
+
   display: flex;
   flex-wrap: wrap;
 
@@ -22,5 +23,6 @@ form {
     height: 80px;
     background-color: #eee;
     border: 1px solid #aaa;
+    font-size: 3rem;
   }
 }

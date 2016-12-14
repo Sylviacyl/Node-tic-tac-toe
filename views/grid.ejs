@@ -8,7 +8,7 @@
   <% grid.forEach(function(playerID, index) { %>
     <form action="/grid/<%=index%>" method="post">
       <button type="submit" class="grid-button">
-        <%= playerID %>
+        <%= include('player-mark', {playerID}) %>
       </button>
     <!-- <%= playerID %>
       </button> -->
