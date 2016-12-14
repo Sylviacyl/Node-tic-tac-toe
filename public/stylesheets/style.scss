@@ -1,0 +1,26 @@
+body {
+  padding: 100px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+
+form {
+  flex-basis: 33%;
+}
+  &-button {
+    display: block;
+    width: 100%;
+    flex-basis: 33%;
+    height: 80px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+  }
+}

@@ -1,0 +1,20 @@
+<%- include('header') -%>
+
+<% if (winningPlayerID != null) { %>
+  <h2><%= winningPlayerID %> won!</h2>
+<% } %>
+
+<article class="grid">
+  <% grid.forEach(function(playerID, index) { %>
+    <form action="/grid/<%=index%>" method="post">
+      <button type="submit" class="grid-button">
+        <%= playerID %>
+      </button>
+    <!-- <%= playerID %>
+      </button> -->
+    </form>
+<% }) %>
+
+</article>
+
+<%- include('footer') -%>
